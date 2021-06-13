@@ -15,26 +15,26 @@
                     <li style="color: #FF8724;">
                         <span style="float:left;margin-right: 8px;"><i class="el-icon-location-outline"></i></span>
                         <div style="display: inline-block;">
-                            银川市金凤区悦海新天地<br>14号办公楼1605-1607号
+                            长安区杨庄乡佛沟村<br>1605-1607号
                         </div>
                     </li>
-                    <li style="color: #67C23A;"><i class="el-icon-phone"></i>服务热线：400-878 6678</li>
-                    <li style="color: #009688;"><i class="el-icon-printer"></i>传真：0756-3629670</li>
+                    <li style="color: #67C23A;"><i class="el-icon-phone"></i>服务热线：400-88888888</li>
+                    <li style="color: #009688;"><i class="el-icon-printer"></i>传真：0123-4567890</li>
                 </ul>
             </div>
             <div class="foot-right">
                 <h2>概览</h2>
                 <ul>
                     <li v-for="(item,index) in viewList" :key="index">
-                        <router-link :to="item.link"><img :src="'../../static/img/foot-view/'+item.path" /></router-link>
+                        <router-link :to="item.link"><img :src="'static/img/foot-view/'+item.path" /></router-link>
                     </li>
                 </ul>
                 <h5><router-link to="">View More >></router-link></h5>
             </div>
         </div>
         <div class="foot-bottom">
-            <div>© Copyrights 2018 宁夏节能投资有限公司. All rights reserved </div>
-            <div>宁ICP备19000065号</div>
+            <div>© Copyrights 2018 特特投资有限公司. All rights reserved </div>
+            <div>陕ICP备xxxxxxxx号</div>
         </div>
     </footer>
 </template>

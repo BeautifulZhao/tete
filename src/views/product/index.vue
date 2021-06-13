@@ -5,7 +5,7 @@
                 <h1>产品中心</h1><br>
                 <p>强大产品矩阵，助力综合能源服务创新升级，如智能产品、能效产品、软件产品...</p>
             </figcaption>
-            <img src="../../../static/img/head-view/about-header-bg.jpg" width="100%" height="555px">
+            <img src="static/img/head-view/about-header-bg.jpg" width="100%" height="555px">
         </figure>
         <ul class="category" :class="{fix: fix}">
             <li v-for="(item,index) in category" :key="index">
@@ -19,7 +19,7 @@
             <transition-group enter-active-class="animated zoomInLeft" leave-active-class="animated zoomOutRight">
                 <li v-for="(item,index) in products" :key="index">
                     <router-link :to="'/product/'+item.id">
-                        <img :src="'../../../static/img/product/'+ item.img" width="250px" height="250px" />
+                        <img :src="'static/img/product/'+ item.img" width="250px" height="250px" />
                     </router-link>
                     <div class="inner-text">
                         <h4>{{ item.title }}</h4>

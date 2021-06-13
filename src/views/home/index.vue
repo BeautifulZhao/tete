@@ -3,7 +3,7 @@
         <el-carousel trigger="click" height="500px" @change="loadAnimate">
             <el-carousel-item v-for="(item,index) in sliderList" :key="index">
                 <figure>
-                    <img :src="'../../static/img/slider/'+item.img" width="100%"/>
+                    <img :src="'static/img/slider/'+item.img" width="100%"/>
                     <figcaption>
                         <h1 :class="{ bounceInDown:slider_index==index }">{{ item.title }}</h1><br>
                         <p :class="{ fadeInUp:slider_index==index }">{{ item.abstract }}</p><br>
@@ -26,7 +26,7 @@
             <ul>
                 <li v-for="(item,index) in services" :key="index">
                     <div class="service-box">
-                        <img :src="`../../../static/img/services/${index+1}.jpg`">
+                        <img :src="`static/img/services/${index+1}.jpg`">
                         <div class="service-info"><p>{{ item.info }}</p></div>
                     </div>
                     <br>
@@ -39,7 +39,7 @@
                 <h1>合作伙伴</h1>
                 <ul>
                     <li v-for="item in 6" :key="item">
-                        <img :src="`../../../static/img/friends/clients-logo0${item}.png`">
+                        <img :src="`static/img/friends/clients-logo0${item}.png`">
                     </li>
                 </ul>
             </div>
@@ -56,7 +56,7 @@ export default {
             slider_index: 0,
             sliderList: [
                 {
-                    title: '加盟宁夏节能，开启财富之门',
+                    title: '加盟特特，开启财富之门',
                     abstract: '诚邀您的加盟',
                     img: 'slider01.jpg',
                     link: ''
